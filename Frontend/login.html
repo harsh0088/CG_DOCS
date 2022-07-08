@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="icon" type="image/png" href="https://c8.alamy.com/comp/2G70TBC/initial-monogram-letter-cg-logo-design-vector-template-c-g-letter-logo-design-2G70TBC.jpg">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Welcome to CG-DOCS</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<section>
+	  <div class="container">
+		<div class="user signinBx">
+		  <div class="imgBx"><img src="https://ecurater.com/wp-content/uploads/2020/10/login1.png" alt="" /></div>
+		  <div class="formBx">
+			<form action="" onsubmit="return false;">
+			  <h2>Sign In</h2>
+			  <input id="fname" type="text" name="" placeholder="Username" />
+			  <input  id="password" type="password" name="" placeholder="Password" />
+			  <input type="submit" onclick="checkUser();" name="" value="Login" style="background-color:#24223d ;"/>
+
+			  <p class="signup">
+				Don't have an account ?
+				<a href="#" onclick="toggleForm();">Sign Up.</a>
+			  </p>
+			</form>
+		  </div>
+		</div>
+		<div class="user signupBx">
+		  <div class="formBx">
+			<form action="" onsubmit="return false;">
+			  <h2>Create an account</h2>
+			  <input id="userName"type="text" name="" placeholder="Username" />
+			  
+			  <input id="Password" type="password" name="" placeholder="Create Password" />
+			  <input type="password" name="" placeholder="Confirm Password" />
+			  <input type="submit" name="" value="Sign Up"  onclick="sendData(); toggleForm();" style="background-color:#24223d ;"  />
+			  <p class="signup">
+				Already have an account ?
+				<a href="#" onclick="toggleForm();" >Sign in.</a>
+			  </p>
+			</form>
+		  </div>
+		  <div class="imgBx"><img src="https://i.pinimg.com/originals/6b/1b/22/6b1b22573f9f3d4bba11a9fa5cb45652.png" alt="" /></div>
+		</div>
+	  </div>
+	</section>
+  </body>
+  <script src="login.js"></script>
+</html>

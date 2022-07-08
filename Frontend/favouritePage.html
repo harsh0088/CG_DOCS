@@ -1,0 +1,181 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/png" href="https://c8.alamy.com/comp/2G70TBC/initial-monogram-letter-cg-logo-design-vector-template-c-g-letter-logo-design-2G70TBC.jpg">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to CG-DOCS</title>
+  <link rel="stylesheet" href="main.css">
+  <!-- box icon -->
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+<script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://kit.fontawesome.com/be9e6d0ff1.js" crossorigin="anonymous"></script>
+
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" id="theme-styles">
+
+  <link rel="stylesheet" href="./favouritePage.css">
+
+  <style>
+
+      .uploadImage
+      {
+         
+          height: 150px;
+          width: 150px;
+         margin-left:35%;
+      }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <div class="logo_details">
+     
+      <div class="logo_name">
+        <h2>CG-DOCS</h2>
+      </div>    
+       
+    </div>
+    <ul class="list">
+      
+        
+      </li>
+      <li>
+        <a href="dashboard.html">
+          <i class='bx bxs-home'></i>
+          <span class="links_name" >
+            Home
+          </span>
+        </a>
+      </li>
+
+      <li>
+        <a href="./recent.html">
+          <i class='bx bxs-time-five'></i>
+          <span class="links_name">
+           Recents
+          </span>
+        </a>
+      </li>
+
+      <li>
+        <a href="./trashPage.html">
+          <i class='bx bxs-trash-alt'></i>
+          <span class="links_name">
+           Trash
+          </span>
+        </a>
+      </li>
+
+      
+      <li class="login">
+        <a href="login.html">
+          <span class="links_name login_out">
+          <button onclick="logout()" class="logout">  Log Out</button>
+          </span>
+          <i class='bx bx-log-out' id="log_out"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+<!-- bootstrap modal popup -->
+
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Upload a file</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="./upload.jpeg" class="uploadImage" alt="Upload Image">
+        </div>
+        <div class="modal-footer">
+          <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+          <input type="file" id="file" style="display: none;"/>
+          <button type="button" value="upload" onclick="thisFileupload()" class="btn btn-primary">Create</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Sideber -->
+  <section class="home_section">
+    <div class="topbar">
+      <div class="toggle">
+        <i class='bx bx-menu' id="btn"></i>
+      </div>
+      <div class="search_wrapper">
+        <label>
+          <span>
+            <button id="searchButton" onclick="searchItem()"><i class='bx bx-search'></i></button>
+          </span>
+          <input type="search" id="search" placeholder="Search...">
+        </label>
+      </div>
+     
+      <span id="adminName"></span>
+      
+    </div>
+    
+    <!-- End Top Bar -->
+    
+    <div class="class" id="create"></div>
+    
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Create folder</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <input  id="input1" type="text" placeholder="Enter name">
+                      
+            </div>
+            <div class="modal-footer">
+              <button type="button" onclick="createFolders()" class="btn btn-primary" data-bs-dismiss="modal">Create</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    </div>
+
+  </section>
+  <script>
+    let sidebar = document.querySelector(".sidebar");
+    let closeBtn = document.querySelector("#btn");
+
+    closeBtn.addEventListener("click", () => {
+      sidebar.classList.toggle("open");
+      // call function
+      changeBtn();
+    });
+
+    function changeBtn() {
+      if(sidebar.classList.contains("open")) {
+        closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");
+      } else {
+        closeBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+      }
+    }
+
+  </script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<script src="favourite.js"></script>
+</body>
+</html>

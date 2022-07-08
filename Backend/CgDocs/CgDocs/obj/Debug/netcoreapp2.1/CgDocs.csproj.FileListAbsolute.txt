@@ -1,0 +1,14 @@
+D:\CgDocs(Remade)\Backend\CgDocs\CgDocs\bin\Debug\netcoreapp2.1\CgDocs.deps.json
+D:\CgDocs(Remade)\Backend\CgDocs\CgDocs\bin\Debug\netcoreapp2.1\CgDocs.runtimeconfig.json
+D:\CgDocs(Remade)\Backend\CgDocs\CgDocs\bin\Debug\netcoreapp2.1\CgDocs.runtimeconfig.dev.json
+D:\CgDocs(Remade)\Backend\CgDocs\CgDocs\bin\Debug\netcoreapp2.1\CgDocs.dll
+D:\CgDocs(Remade)\Backend\CgDocs\CgDocs\bin\Debug\netcoreapp2.1\CgDocs.pdb
+D:\CgDocs(Remade)\Backend\CgDocs\CgDocs\obj\Debug\netcoreapp2.1\CgDocs.csprojAssemblyReference.cache
+D:\CgDocs(Remade)\Backend\CgDocs\CgDocs\obj\Debug\netcoreapp2.1\CgDocs.csproj.CoreCompileInputs.cache
+D:\CgDocs(Remade)\Backend\CgDocs\CgDocs\obj\Debug\netcoreapp2.1\CgDocs.RazorAssemblyInfo.cache
+D:\CgDocs(Remade)\Backend\CgDocs\CgDocs\obj\Debug\netcoreapp2.1\CgDocs.RazorAssemblyInfo.cs
+D:\CgDocs(Remade)\Backend\CgDocs\CgDocs\obj\Debug\netcoreapp2.1\CgDocs.AssemblyInfoInputs.cache
+D:\CgDocs(Remade)\Backend\CgDocs\CgDocs\obj\Debug\netcoreapp2.1\CgDocs.AssemblyInfo.cs
+D:\CgDocs(Remade)\Backend\CgDocs\CgDocs\obj\Debug\netcoreapp2.1\CgDocs.RazorTargetAssemblyInfo.cache
+D:\CgDocs(Remade)\Backend\CgDocs\CgDocs\obj\Debug\netcoreapp2.1\CgDocs.dll
+D:\CgDocs(Remade)\Backend\CgDocs\CgDocs\obj\Debug\netcoreapp2.1\CgDocs.pdb
